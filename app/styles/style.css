@@ -455,9 +455,6 @@ h6.box-header:after
 .page-header
 {
 	height: 100px;
-	-webkit-box-shadow: 0 11px 4px -10px rgba(0, 0, 0, 0.05) inset;
-	-moz-box-shadow: 0 11px 4px -10px rgba(0, 0, 0, 0.05) inset;
-	box-shadow: 0 11px 4px -10px rgba(0, 0, 0, 0.05) inset;
 }
 .page-header-left
 {
