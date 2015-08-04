@@ -59,6 +59,12 @@ p.description.t1
 	line-height: 24px;
 	margin-top: 24px;
 }
+p.title
+{
+  font-size: 18px;
+  margin-top: 24px;
+  margin-bottom: -20px;
+}
 p a
 {
 	color: #7770FF;
