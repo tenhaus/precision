@@ -424,50 +424,7 @@ jQuery(document).ready(function($){
 		$("html, body").animate({scrollTop: offset.top-90}, 400);
 	});
 	//hashchange
-	$(window).on("hashchange", function(event){
-		var hashSplit = $.param.fragment().split("-");
-		var hashString = "";
-		for(var i=0; i<hashSplit.length-1; i++)
-			hashString = hashString + hashSplit[i] + (i+1<hashSplit.length-1 ? "-" : "");
-		if(hashSplit[0].substr(0,11)!="prettyPhoto")
-		{
-			if(hashSplit[0].substr(0,7)!="filter=")
-			{
-				$('.ui-accordion .ui-accordion-header#accordion-' + decodeURIComponent($.param.fragment())).trigger("change");
-				$('.ui-accordion .ui-accordion-header#accordion-' + decodeURIComponent(hashString)).trigger("change");
-			}
-			$('.tabs .ui-tabs-nav [href="#' + decodeURIComponent(hashString) + '"]').trigger("change");
-			$('.tabs .ui-tabs-nav [href="#' + decodeURIComponent($.param.fragment()) + '"]').trigger("change");
-			if(hashSplit[0].substr(0,7)!="filter=")
-				$('.tabs .ui-accordion .ui-accordion-header#accordion-' + decodeURIComponent($.param.fragment())).trigger("change");
-			$(".testimonials-list, .our-clients-list").trigger('configuration', ['debug', false, true]);
-			$(document).scroll();
-		}
-		if(hashSplit[0].substr(0,7)=="comment")
-		{
-			if($(location.hash).length)
-			{
-				var offset = $(location.hash).offset();
-				$("html, body").animate({scrollTop: offset.top-10}, 400);
-			}
-		}
 
-		// get options object from hash
-		var hashOptions = $.deparam.fragment();
-
-		if(hashSplit[0].substr(0,7)=="filter")
-		{
-			var filterClass = decodeURIComponent($.param.fragment()).substr(7, decodeURIComponent($.param.fragment()).length);
-			// apply options from hash
-			$(".isotope-filters a").removeClass("selected");
-			if($('.isotope-filters a[href="#filter-' + filterClass + '"]').length)
-				$('.isotope-filters a[href="#filter-' + filterClass + '"]').addClass("selected");
-			else
-				$(".isotope-filters li:first a").addClass("selected");
-
-			$(".isotope").isotope({filter: (filterClass!="*" ? "." : "") + filterClass});
-		}
-	}).trigger("hashchange");
 
 	$('body.dont-scroll').on("touchmove", {}, function(event){
 	  event.preventDefault();

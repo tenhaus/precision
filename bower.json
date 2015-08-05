@@ -4,8 +4,7 @@
   "dependencies": {
     "bootstrap-sass": "~3.3.5",
     "modernizr": "~2.8.1",
-    "slider-revolution": "~4.3.7",
-    "jquery.bbq": "~1.2.1"
+    "slider-revolution": "~4.3.7"
   },
   "overrides": {
     "bootstrap-sass": {
