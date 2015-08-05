@@ -4,7 +4,15 @@
   "dependencies": {
     "bootstrap-sass": "~3.3.5",
     "modernizr": "~2.8.1",
-    "slider-revolution": "~4.3.7"
+    "slider-revolution": "~4.3.7",
+    "jquery-ui": "~1.11.4",
+    "jqueryui-touch-punch": "*",
+    "isotope": "~2.2.1",
+    "jquery.easing": "~1.3.1",
+    "carouFredSel": "~6.2.1",
+    "jquery-touchswipe": "~1.6.9",
+    "prettyphoto": "*",
+    "qtip2": "~2.2.1"
   },
   "overrides": {
     "bootstrap-sass": {

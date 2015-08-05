@@ -1,4 +1,3 @@
-"use strict";
 window.odometerOptions = {
   auto: true, // Don't automatically initialize everything with class 'odometer'
   selector: '.number.animated-element', // Change the selector used to automatically find things to be animated
@@ -523,9 +522,6 @@ jQuery(document).ready(function($){
 		$("html, body").animate({scrollTop: 0}, "slow");
 		return false;
 	});
-
-	//hint
-	$(".comment-form input[type='text'], .contact-form input[type='text'], .comment-form textarea, .contact-form textarea, .search input[type='text'], .search_form input[type='text']").hint();
 
 	//reply scroll
 	$(".comment-details .more").on("click", function(event){
