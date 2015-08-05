@@ -33,86 +33,6 @@ jQuery(document).ready(function($){
 		$(this).prev().slideToggle();
 		$(this).toggleClass("active");
 	});
-	//cost calculator
-	$(".cost-slider").each(function(){
-		$(this).slider({
-			range: "min",
-			value: $(this).data("value"),
-			min: $(this).data("min"),
-			max: $(this).data("max"),
-			step: $(this).data("step"),
-			slide: function(event, ui){
-				$("#" + $(this).data("input")).val(ui.value);
-				$(this).find(".cost-slider-tooltip .value").html(ui.value);
-				if(typeof($(this).data("price"))!="undefined")
-					$("#" + $(this).data("value-input")).val(ui.value*$(this).data("price"));
-				$("#interior-renovation-cost").costCalculator("calculate");
-				$("#fence-cost").costCalculator("calculate");
-				$("#paver-walkway-cost").costCalculator("calculate");
-			},
-			change: function(event, ui){
-				$("#" + $(this).data("input")).val(ui.value);
-				$(this).find(".cost-slider-tooltip .value").html(ui.value);
-				if(typeof($(this).data("price"))!="undefined")
-					$("#" + $(this).data("value-input")).val(ui.value*$(this).data("price"));
-				$("#interior-renovation-cost").costCalculator("calculate");
-				$("#fence-cost").costCalculator("calculate");
-				$("#paver-walkway-cost").costCalculator("calculate");
-			}
-		}).find(".ui-slider-handle").append('<div class="cost-slider-tooltip"><div class="arrow"></div><div class="value">' + $(this).data("value") + '</div></div>');
-	});
-	$(".cost-slider-input").on("paste change keyup", function(){
-		var self = $(this);
-		if($("[data-input='" + self.attr("id") + "']").length)
-			setTimeout(function(){
-				$("[data-input='" + self.attr("id") + "']").slider("value", self.val());
-			}, 500);
-		else
-		{
-			$("#interior-renovation-cost").costCalculator("calculate");
-			$("#fence-cost").costCalculator("calculate");
-			$("#paver-walkway-cost").costCalculator("calculate");
-		}
-	});
-	$(".cost-dropdown").each(function(){
-		$(this).selectmenu({
-			width: 402,
-			icons: { button: "template-arrow-dropdown" },
-			change: function(event, ui){
-				$("#interior-renovation-cost").costCalculator("calculate");
-				$("#fence-cost").costCalculator("calculate");
-				$("#paver-walkway-cost").costCalculator("calculate");
-				$("." + $(this).attr("id")).val(ui.item.label);
-			},
-			select: function(event, ui){
-				$("#interior-renovation-cost").costCalculator("calculate");
-				$("#fence-cost").costCalculator("calculate");
-				$("#paver-walkway-cost").costCalculator("calculate");
-				$("." + $(this).attr("id")).val(ui.item.label);
-			},
-			create: function(event, ui){
-				$(".contact-form").each(function(){
-					$(this)[0].reset();
-				});
-				$(this).selectmenu("refresh")
-			}
-		});
-	});
-	$("#interior-renovation-cost").costCalculator({
-		formula: "ir-square-feet*ir-walls+ir-square-feet*ir-floors+ir-doors-value+ir-windows-value",
-		currency: "$",
-		updateHidden: $("#ir-total-cost")
-	});
-	$("#fence-cost").costCalculator({
-		formula: "fe-length*fe-height*fe-panel+fe-gate+fe-length*fe-extras",
-		currency: "$",
-		updateHidden: $("#fe-total-cost")
-	});
-	$("#paver-walkway-cost").costCalculator({
-		formula: "pw-area-width*pw-area-length*pw-block-paving+pw-area-width*pw-area-length*pw-surface+pw-stone-walling-value",
-		currency: "$",
-		updateHidden: $("#pw-total-cost")
-	});
 
 	//slider
 	jQuery('.revolution-slider').show().revolution({
@@ -128,7 +48,7 @@ jQuery(document).ready(function($){
 		thumbHeight:50,
 		thumbAmount:5,
 
-		navigationType:"bullet",
+		navigationType:"none",
 		navigationArrows:"solo",
 		navigationStyle:"preview1",
 
@@ -182,24 +102,6 @@ jQuery(document).ready(function($){
 		hideCaptionAtLimit:0,
 		hideAllCaptionAtLilmit:0,
 		startWithSlide:0
-	});
-
-	//parallax
-	if(!navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/))
-		$(".parallax").parallax({
-			speed: 100,
-			startPosition: 0/*,
-			startPosition: -1500*/
-		});
-	else
-		$(".parallax").addClass("cover");
-
-	//isotope
-	$(".isotope").isotope({
-		masonry: {
-			//columnWidth: 225,
-			gutter: 30
-		}
 	});
 
 	//testimonials
@@ -666,7 +568,7 @@ jQuery(document).ready(function($){
 	});
 
 	//hint
-	$(".comment-form input[type='text'], .contact-form input[type='text'], .comment-form textarea, .contact-form textarea, .search input[type='text'], .search_form input[type='text'], .cost-calculator-container input[placeholder]").hint();
+	$(".comment-form input[type='text'], .contact-form input[type='text'], .comment-form textarea, .contact-form textarea, .search input[type='text'], .search_form input[type='text']").hint();
 
 	//reply scroll
 	$(".comment-details .more").on("click", function(event){
@@ -698,121 +600,6 @@ jQuery(document).ready(function($){
 			$(this)[0].reset();
 		});
 	}
-	$(".contact-form").submit(function(event){
-		event.preventDefault();
-		var data = $(this).serializeArray();
-		var self = $(this);
-		//if($(this).find(".total-cost").length)
-		//	data.push({name: 'total-cost', value: $(this).find(".total-cost").val()});
-		self.find(".block").block({
-			message: false,
-			overlayCSS: {
-				opacity:'0.3',
-				"backgroundColor": "#FFF"
-			}
-		});
-
-		$.ajax({
-			url: self.attr("action"),
-			data: data,
-			type: "post",
-			dataType: "json",
-			success: function(json){
-				self.find("[name='submit'], [name='name'], [name='email'], [name='message']").qtip('destroy');
-				if(typeof(json.isOk)!="undefined" && json.isOk)
-				{
-					if(typeof(json.submit_message)!="undefined" && json.submit_message!="")
-					{
-						self.find("[name='submit']").qtip(
-						{
-							style: {
-								classes: 'ui-tooltip-success'
-							},
-							content: {
-								text: json.submit_message
-							},
-							position: {
-								my: "right center",
-								at: "left center"
-							}
-						}).qtip('show');
-						self[0].reset();
-						self.find(".cost-slider-input").trigger("change");
-						self.find(".cost-dropdown").selectmenu("refresh");
-						self.find("input[type='text'], textarea").trigger("focus").trigger("blur");
-					}
-				}
-				else
-				{
-					if(typeof(json.submit_message)!="undefined" && json.submit_message!="")
-					{
-						self.find("[name='submit']").qtip(
-						{
-							style: {
-								classes: 'ui-tooltip-error'
-							},
-							content: {
-								text: json.submit_message
-							},
-							position: {
-								my: "right center",
-								at: "left center"
-							}
-						}).qtip('show');
-					}
-					if(typeof(json.error_name)!="undefined" && json.error_name!="")
-					{
-						self.find("[name='name']").qtip(
-						{
-							style: {
-								classes: 'ui-tooltip-error'
-							},
-							content: {
-								text: json.error_name
-							},
-							position: {
-								my: "bottom center",
-								at: "top center"
-							}
-						}).qtip('show');
-					}
-					if(typeof(json.error_email)!="undefined" && json.error_email!="")
-					{
-						self.find("[name='email']").qtip(
-						{
-							style: {
-								classes: 'ui-tooltip-error'
-							},
-							content: {
-								text: json.error_email
-							},
-							position: {
-								my: "bottom center",
-								at: "top center"
-							}
-						}).qtip('show');
-					}
-					if(typeof(json.error_message)!="undefined" && json.error_message!="")
-					{
-						self.find("[name='message']").qtip(
-						{
-							style: {
-								classes: 'ui-tooltip-error'
-							},
-							content: {
-								text: json.error_message
-							},
-							position: {
-								my: "bottom center",
-								at: "top center"
-							}
-						}).qtip('show');
-					}
-				}
-				self.find(".block").unblock();
-			}
-		});
-	});
 
 	if($(".header-container").hasClass("sticky"))
 		menu_position = $(".header-container").offset().top;

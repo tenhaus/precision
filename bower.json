@@ -3,7 +3,9 @@
   "private": true,
   "dependencies": {
     "bootstrap-sass": "~3.3.5",
-    "modernizr": "~2.8.1"
+    "modernizr": "~2.8.1",
+    "slider-revolution": "~4.3.7",
+    "jquery.bbq": "~1.2.1"
   },
   "overrides": {
     "bootstrap-sass": {
@@ -11,6 +13,13 @@
         "assets/stylesheets/_bootstrap.scss",
         "assets/fonts/bootstrap/*",
         "assets/javascripts/bootstrap.js"
+      ]
+    },
+    "slider-revolution": {
+      "main": [
+        "src/js/jquery.themepunch.plugins.min.js",
+        "src/js/jquery.themepunch.revolution.js",
+        "src/css/settings.css"
       ]
     }
   },
