@@ -73,7 +73,7 @@ p.title
 }
 p a
 {
-	color: #7770FF;
+	color: #64BDEC;
 	font-weight: 600;
 }
 strong
@@ -92,7 +92,7 @@ blockquote:before
 {
 	display: block;
 	font-size: 48px;
-	color: #7770FF;
+	color: #64BDEC;
 	text-align: left;
 	margin-bottom: 10px;
 }
@@ -369,7 +369,7 @@ h2.box-header.align-left
 {
 	display: block;
 	content: "";
-	background: #7770FF;
+	background: #64BDEC;
 	width: 40px;
 	height: 2px;
 	margin-top: 13px;
@@ -458,13 +458,13 @@ h6.box-header:after
 {
 	font-size: 30px;
 	font-weight: 500;
-	color: #7770FF;
+	color: #64BDEC;
 	line-height: 1;
   display: inline-block;
 }
 .header h1 a
 {
-	color: #7770FF;
+	color: #64BDEC;
 }
 .header h1 a:hover
 {
@@ -563,7 +563,7 @@ h6.box-header:after
 }
 .sf-menu li:hover a, .sf-menu li:hover a:visited
 {
-	color: #7770FF;
+	color: #64BDEC;
 }
 .sf-menu li a, .sf-menu li a:visited
 {
@@ -579,7 +579,7 @@ h6.box-header:after
 .sf-menu a:visited:hover,
 .sf-menu li.selected a
 {
-	color: #7770FF;
+	color: #64BDEC;
 }
 body .header-container .menu-container .sf-menu>li:first-child>a
 {
@@ -640,7 +640,7 @@ body .header-container .menu-container .sf-menu>li:first-child>a
 .menu-container .sf-menu li:hover ul li.selected ul li.selected a,
 .menu-container .sf-menu li:hover ul li.sfHover>a
 {
-	color: #7770FF;
+	color: #64BDEC;
 }
 ul.sf-menu li li:hover ul, ul.sf-menu li li.sfHover ul,
 ul.sf-menu li li li:hover ul, ul.sf-menu li li li.sfHover ul
@@ -680,7 +680,7 @@ ul.sf-menu li li li:hover ul, ul.sf-menu li li li.sfHover ul
 .mobile-menu li.selected ul li.selected a,
 .mobile-menu li.selected ul li.selected ul li.selected a
 {
-	background: #7770FF;
+	background: #64BDEC;
 	color: #FFF;
 }
 .mobile-menu li ul a
@@ -713,7 +713,7 @@ ul.sf-menu li li li:hover ul, ul.sf-menu li li li.sfHover ul
 }
 .mobile-menu-switch:hover .line
 {
-	background: #7770FF;
+	background: #64BDEC;
 }
 /* --- vertical menu --- */
 .vertical-menu li
@@ -736,7 +736,7 @@ ul.sf-menu li li li:hover ul, ul.sf-menu li li li.sfHover ul
 .vertical-menu li.selected a,
 .vertical-menu li:hover a
 {
-	background: #7770FF;
+	background: #64BDEC;
 }
 .vertical-menu li.selected a,
 .vertical-menu li:hover a,
@@ -881,7 +881,7 @@ body.overlay .background-overlay
 }
 .row.yellow
 {
-	background: #7770FF;
+	background: #64BDEC;
 }
 .row:after
 {
@@ -1063,7 +1063,7 @@ body.overlay .background-overlay
 	float: left;
 	font-size: 48px;
 	margin-right: 30px;
-	color: #7770FF;
+	color: #64BDEC;
 	border: 1px solid #E2E6E7;
 	padding: 19px;
 	border-radius: 50%;
@@ -1205,7 +1205,7 @@ body.overlay .background-overlay
 {
 	display: block;
 	content: "";
-	background: #7770FF;
+	background: #64BDEC;
 	width: 40px;
 	height: 2px;
 	margin-top: 30px;
@@ -1270,8 +1270,8 @@ body.overlay .background-overlay
 .our-clients-pagination a.selected,
 .our-clients-pagination a:hover
 {
-	border-color: #7770FF;
-	background: #7770FF;
+	border-color: #64BDEC;
+	background: #64BDEC;
 }
 .our-clients-pagination span
 {
@@ -1285,7 +1285,7 @@ body.overlay .background-overlay
 	width: 48px;
 	height: 48px;
 	font-size: 48px;
-	color: #7770FF;
+	color: #64BDEC;
 	background: #FFF;
 	border: 1px solid #FFF;
 	padding: 19px;
@@ -1336,8 +1336,8 @@ body.overlay .background-overlay
 }
 .slider-control:hover
 {
-	background: #7770FF;
-	border-color: #7770FF;
+	background: #64BDEC;
+	border-color: #64BDEC;
 }
 /* --- parallax --- */
 .parallax-1
@@ -1376,7 +1376,7 @@ span.odometer.number:after
 {
 	display: block;
 	content: "";
-	background: #7770FF;
+	background: #64BDEC;
 	width: 40px;
 	height: 2px;
 	margin: 20px auto 0;
@@ -1444,7 +1444,7 @@ span.odometer.number:after
 .blog .post-details .date h2,
 .blog .post-details li:before
 {
-	color: #7770FF;
+	color: #64BDEC;
 }
 .blog .post-details li.date:before
 {
@@ -1555,8 +1555,8 @@ span.odometer.number:after
 .taxonomies a:hover
 {
 	color: #FFF;
-	background: #7770FF;
-	border-color: #7770FF;
+	background: #64BDEC;
+	border-color: #64BDEC;
 }
 .taxonomies.full-width li
 {
@@ -1587,7 +1587,7 @@ span.odometer.number:after
 }
 .buttons li:before
 {
-	color: #7770FF;
+	color: #64BDEC;
     float: left;
     font-size: 24px;
     margin-right: 19px;
@@ -1597,7 +1597,7 @@ span.odometer.number:after
 .buttons li.selected a,
 .buttons li:hover a
 {
-	background: #7770FF;
+	background: #64BDEC;
 	color: #FFF;
 }
 .buttons li.selected:before,
@@ -1618,7 +1618,7 @@ span.odometer.number:after
 	float: left;
 	font-size: 48px;
 	margin-right: 30px;
-	color: #7770FF;
+	color: #64BDEC;
 	border: 1px solid #E2E6E7;
 	padding: 19px;
 	border-radius: 50%;
@@ -1653,7 +1653,7 @@ span.odometer.number:after
 	height: 48px;
 	font-size: 48px;
 	margin-right: 30px;
-	color: #7770FF;
+	color: #64BDEC;
 	border: 1px solid #E2E6E7;
 	padding: 19px;
 	margin-left: auto;
@@ -1716,7 +1716,7 @@ span.odometer.number:after
 	display: none;
 	font-size: 12px;
 	margin-right: 20px;
-	color: #7770FF;
+	color: #64BDEC;
 }
 .comment-form p.description.t1,
 .contact-form p.description.t1
@@ -1927,8 +1927,8 @@ span.odometer.number:after
 .pagination li.selected a
 {
 	color: #FFF;
-	background-color: #7770FF;
-	border-color: #7770FF;
+	background-color: #64BDEC;
+	border-color: #64BDEC;
 }
 /* --- list bullet --- */
 .list li
@@ -1942,12 +1942,12 @@ span.odometer.number:after
 }
 .list li a
 {
-	color: #7770FF;
+	color: #64BDEC;
 	font-weight: 600;
 }
 li.template-bullet:before
 {
-	color: #7770FF;
+	color: #64BDEC;
 	padding-right: 15px;
 	margin-left: -30px;
 	vertical-align: text-top;
@@ -2009,7 +2009,7 @@ li.template-bullet:before
 	margin-left: auto;
 	margin-right: auto;
 	font-size: 48px;
-	color: #7770FF;
+	color: #64BDEC;
 	padding: 20px 20px 12px;
 }
 .tabs-navigation li a
@@ -2038,7 +2038,7 @@ li.template-bullet:before
 .tabs-navigation.small.gray li a.selected,
 .tabs-navigation.small.gray li.ui-tabs-active a
 {
-	background: #7770FF;
+	background: #64BDEC;
 	color: #FFF;
 }
 .tabs-navigation li a:hover:before,
@@ -2053,7 +2053,7 @@ li.template-bullet:before
 	position: absolute;
 	border-style: solid;
 	border-width: 9px 9px 0;
-	border-color: #7770FF transparent;
+	border-color: #64BDEC transparent;
 	bottom: -9px;
 	margin-left: -9px;
 }
@@ -2111,8 +2111,8 @@ li.template-bullet:before
 }
 .accordion .ui-accordion-header.ui-state-active
 {
-	background-color: #7770FF;
-	border-bottom-color: #7770FF;
+	background-color: #64BDEC;
+	border-bottom-color: #64BDEC;
 }
 .accordion .ui-accordion-header.ui-state-active h5
 {
@@ -2127,7 +2127,7 @@ li.template-bullet:before
 	float: left;
 	margin-right: 15px;
 	font-size: 24px;
-	color: #7770FF;
+	color: #64BDEC;
 }
 .accordion  .ui-accordion-header:hover
 {
@@ -2228,8 +2228,8 @@ li.template-bullet:before
 }
 .social-icons.yellow li
 {
-	background: #7770FF;
-	border: 2px solid #7770FF;
+	background: #64BDEC;
+	border: 2px solid #64BDEC;
 	margin-left: 1px;
 }
 .social-icons.yellow li:hover
@@ -2454,7 +2454,7 @@ li.template-bullet:before
 	float: left;
 	font-size: 48px;
 	margin-right: 30px;
-	color: #7770FF;
+	color: #64BDEC;
 	border: 1px solid #E2E6E7;
 	padding: 19px;
 	border-radius: 50%;
@@ -2471,7 +2471,7 @@ li.template-bullet:before
 	font-family: 'Raleway';
 	font-size: 14px;
 	line-height: 24px;
-	border-left: 4px solid #7770FF;
+	border-left: 4px solid #64BDEC;
 	padding: 14px 0 12px 15px;
 }
 .cost-calculator-box .cost-slider-container
@@ -2525,7 +2525,7 @@ li.template-bullet:before
 	font-family: 'Raleway';
 	font-weight: 300;
 	font-size: 40px;
-	color: #7770FF;
+	color: #64BDEC;
 }
 .ui-slider
 {
@@ -2559,7 +2559,7 @@ li.template-bullet:before
 	height: 10px;
 	margin-left: 9px;
 	margin-top: 9px;
-	background: #7770FF;
+	background: #64BDEC;
 	border-radius: 50%;
 	-moz-border-radius: 50%;
 	-webkit-border-radius: 50%;
@@ -2576,7 +2576,7 @@ li.template-bullet:before
 	width: 100%;
 	font-family: 'Raleway';
 	color: #FFF;
-	background: #7770FF;
+	background: #64BDEC;
 	padding: 12px 0;
 	text-align: center;
 }
@@ -2589,7 +2589,7 @@ li.template-bullet:before
 .ui-slider-handle .cost-slider-tooltip .arrow:before
 {
 	content: "";
-	border-color: #7770FF transparent;
+	border-color: #64BDEC transparent;
     border-style: solid;
     border-width: 0 8px 8px;
 	margin-left: -8px;
@@ -2598,7 +2598,7 @@ li.template-bullet:before
 }
 .ui-slider-range-min
 {
-	background: #7770FF;
+	background: #64BDEC;
 	border-radius: 5px;
 }
 .ui-selectmenu-button
@@ -2625,7 +2625,7 @@ li.template-bullet:before
 .ui-selectmenu-button.ui-corner-top .ui-icon,
 .ui-selectmenu-button:hover .ui-icon
 {
-	color: #7770FF;
+	color: #64BDEC;
 }
 .ui-selectmenu-menu
 {
@@ -2652,7 +2652,7 @@ li.template-bullet:before
 }
 .ui-selectmenu-menu .ui-menu li.ui-state-focus
 {
-	color: #7770FF;
+	color: #64BDEC;
 }
 /* --- buttons --- */
 .more,
@@ -2662,7 +2662,7 @@ li.template-bullet:before
 	font-family: 'Raleway';
 	font-size: 12px;
 	font-weight: 700;
-	background: #7770FF;
+	background: #64BDEC;
 	padding: 16px 23px 15px;
 	text-align: center;
 	cursor: pointer;
@@ -2674,7 +2674,7 @@ li.template-bullet:before
 	transition: all 0.3s ease 0s;
 	-webkit-transition: all 0.3s ease 0s;
 	-moz-transition: all 0.3s ease 0s;
-	border: 2px solid #7770FF;
+	border: 2px solid #64BDEC;
 }
 .more:hover
 {
@@ -2694,8 +2694,8 @@ li.template-bullet:before
 }
 .more.simple:hover
 {
-	border-color: #7770FF;
-	background: #7770FF;
+	border-color: #64BDEC;
+	background: #64BDEC;
 }
 .more.small
 {
@@ -2784,7 +2784,7 @@ div.pp_default .pp_close:hover
 .slider-content-box h2
 {
 	color: #FFF;
-	border-bottom: 1px solid #7770FF;
+	border-bottom: 1px solid #64BDEC;
 	padding: 21px 30px 20px;
 	background: rgba(38, 38, 40, 0.68);
 }
@@ -2905,7 +2905,7 @@ div.pp_default .pp_close:hover
 }
 .scroll-top:hover
 {
-	background: #7770FF;
+	background: #64BDEC;
 }
 .header h1 a,
 .sf-menu a:hover,
