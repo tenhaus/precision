@@ -959,6 +959,10 @@ body.overlay .background-overlay
 	background: #FFF;
 	padding-bottom: 66px;
 }
+.services-list li img
+{
+  width: 100%;
+}
 .services-list li h4
 {
 	margin-top: 22px;
