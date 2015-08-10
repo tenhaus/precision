@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: "streamline-large";
-  src:url("fonts/streamline-large.eot");
-  src:url("fonts/streamline-large.eot?#iefix") format("embedded-opentype"),
-    url("fonts/streamline-large.woff") format("woff"),
-    url("fonts/streamline-large.ttf") format("truetype"),
-    url("fonts/streamline-large.svg#streamline-large") format("svg");
+  src:url("/fonts/streamline-large.eot");
+  src:url("/fonts/streamline-large.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/streamline-large.woff") format("woff"),
+    url("/fonts/streamline-large.ttf") format("truetype"),
+    url("/fonts/streamline-large.svg#streamline-large") format("svg");
   font-weight: normal;
   font-style: normal;
 
