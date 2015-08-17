@@ -188,6 +188,12 @@ img.radius
 {
 	max-width: 100%;
 }
+
+img.radius.about
+{
+  margin-top: 50px;  
+}
+
 .float
 {
 	float: left;
