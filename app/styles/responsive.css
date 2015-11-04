@@ -1,3 +1,17 @@
+@media screen and (max-width:1900px){
+	.login-box .contents-box{
+		width: 700px;
+	}
+	.form-group input{
+		width: 500px;
+	}
+	.login-container{
+		padding: 3em;
+	}
+}
+
+
+
 @media screen and (max-width:1189px)
 {
 	/* --- site container --- */
@@ -154,6 +168,15 @@
 	.slider-content-box .more
 	{
 		margin-left: 25px;
+	}
+	.login-box{
+		width: 500px;
+	}
+	.login-container{
+		padding: 2em 0;
+	}
+	.form-group input{
+		width: 400px;
 	}
 	/* --- page layout --- */
 	.column-1-2
@@ -822,6 +845,15 @@
 	.slider-content-box p
 	{
 		display: none;
+	}
+	.login-box{
+		width: 300px;
+	}
+	.form-group input{
+		width: 200px;
+	}
+	.login-container{
+		padding: 2em 0;
 	}
 	/* --- page layout --- */
 	.row .column

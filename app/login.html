@@ -34,6 +34,9 @@
 </head>
 	<body>
 		<div class="site-container">
+			<div class="header-top-bar-container clearfix">
+				<a href="#" class="header-toggle template-arrow-up"></a>
+			</div>
 			<div class="header-container">
 			<!--<div class="header-container sticky">-->
 				<div class="vertical-align-table column-1-1">
@@ -57,7 +60,7 @@
 											HOME
 										</a>
 									</li>
-									<li class="selected">
+									<li>
 										<a href="services.html" title="Services">
 											SERVICES
 										</a>
@@ -72,16 +75,16 @@
                       ABOUT PCC
                   	</a>
           				</li>
-									<li class="left-flyout">
+									<li>
 										<a href="contact.html" title="Contact">
 											CONTACT
 										</a>
 									</li>
 									<li>
-											<a href="login.html" title="Login">
-												LOGIN
-											</a>
-										</li>
+										<a  class="left-flyout selected" href="login.html" title="Login">
+										LOGIN
+									</a>
+								</li>
 								</ul>
 							</nav>
 							<div class="mobile-menu-container">
@@ -93,7 +96,7 @@
 												HOME
 											</a>
 										</li>
-										<li class="selected">
+										<li>
 											<a href="services.html" title="Services">
 												SERVICES
 											</a>
@@ -108,16 +111,15 @@
 	                      ABOUT PCC
 	                  	</a>
 	          				</li>
-										<li class="left-flyout">
+										<li>
 											<a href="contact.html" title="Contact">
 												CONTACT
 											</a>
 										</li>
 										<li>
-											<a href="login.html" title="Login">
-												LOGIN
-											</a>
-										</li>
+											<a  class="left-flyout selected" href="login.html" title="Login">
+											LOGIN
+										</a>
 									</ul>
 								</nav>
 							</div>
@@ -125,96 +127,51 @@
 					</div>
 				</div>
 			</div>
-			<div class="theme-page padding-bottom-70">
-				<div class="row gray full-width page-header vertical-align-table">
-					<div class="row full-width padding-top-bottom-50 vertical-align-cell">
-						<div class="row">
-							<div class="page-header-left">
-								<h1>OUR SERVICES</h1>
-							</div>
-							<div class="page-header-right">
-								<div class="bread-crumb-container">
-									<label>You Are Here:</label>
-									<ul class="bread-crumb">
-										<li>
-											<a title="Home" href="index.html">
-												HOME
-											</a>
-										</li>
-										<li class="separator">
-											&#47;
-										</li>
-										<li>
-											OUR SERVICES
-										</li>
-									</ul>
-								</div>
+			<div class="theme-page padding-bottom-66">
+				<div class="clearfix">
+					<div class="row full-width">
+						<div class="login-container">
+							<div class="login-box">
+								<h2>Login</h2>
+								<form data-toggle="validator" role="form">
+									<div class="form-group">
+							
+										<input type="text" class="form-control" id="inputName" placeholder="Username" required/>
+									</div>
+									<div class="form-group">
+										<input type="text" class="form-control" data-minlength="6" id="inputPassword" placeholder="Password" required/>
+									</div>
+									<div class="form-group">
+										<input type="password" class="more simple" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="Sorry incorrect password, please try again." placeholder="Login"></div>
+								</form>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="clearfix">
-					<div class="row">
-						<ul class="services-list clearfix padding-top-70">
-							<li>
-								<img src="images/samples/flooring.png" alt="">
-								<h4 class="box-header">FLOORS</h4>
-								<p>Superflat floors have become the industry standard in today’s modern warehouses and distribution centers. Superflat means higher racking systems and increased capacity, thus improving the client’s bottom line.</p>
-							</li>
-							<li>
-								<img src="images/samples/walls.png" alt="">
-								<h4 class="box-header">TILT-UP WALLS</h4>
-								<p>Tilt-Up construction can offer earlier occupancy, large interior spaces, beauty, durability, and lower operations costs. The flexibility of design makes tilt-wall construction a good choice for office buildings and build-to-suit space.</p>
-							</li>
-							<li>
-								<img src="images/samples/foundations.png" alt="">
-								<h4 class="box-header">FOUNDATIONS</h4>
-								<p>Foundation work is the first step in any successful project. Precision Concrete Construction has the manpower to work in multiple locations on the same jobsite under even the worst conditions to get you out of the ground quickly.</p>
-							</li>
-							<li>
-								<img src="images/samples/commercial.png" alt="">
-								<h4 class="box-header">COMMERCIAL</h4>
-								<p>We specialize in various retail projects, multi-level residential projects, parking structures for commercial projects, office building construction and construction of elevated slabs among other services.</p>
-							</li>
-							<li>
-								<img src="images/samples/government.png" alt="">
-								<h4 class="box-header">GOVERNMENT</h4>
-								<p>We have performed highly technical work for projects at the National Archives, Aberdeen Proving Ground, Fort Mead, Fort Detrick, the U.S. Naval Academy and the Pentagon, among others.</p>
-							</li>
-							<li>
-								<img src="images/samples/institution.png" alt="">
-								<h4 class="box-header">INSTITUTIONAL</h4>
-								<p>We specialize in base building and renovating institutional buildings. We have completed projects for faith-based, educational and healthcare institutions, among others.</p>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="row yellow full-width padding-top-bottom-30">
-				<div class="row">
-					<div class="column column-1-3">
-						<ul class="contact-details-list">
-							<li class="sl-small-phone">
-								<p>Phone:<br>
-								410-256-2800</p>
-							</li>
-						</ul>
-					</div>
-					<div class="column column-1-3">
-						<ul class="contact-details-list">
-							<li class="sl-small-location">
-								<p>11341 Philadelphia Road<br>
-								White Marsh, MD 21162</p>
-							</li>
-						</ul>
-					</div>
-					<div class="column column-1-3">
-						<ul class="contact-details-list">
-							<li class="sl-small-mail">
-								<p>E-mail:<br>
-								<a href="mailto:ContactUs@PrecisionConcrete.com">ContactUs@PrecisionConcrete.com</a></p>
-							</li>
-						</ul>
+					<div class="row page-margin-top">
+						<div class="column column-1-3">
+							<ul class="features-list">
+								<li class="sl-small-phone">
+									<p>Phone:<br>
+									410-256-2800</p>
+								</li>
+							</ul>
+						</div>
+						<div class="column column-1-3">
+							<ul class="features-list">
+								<li class="sl-small-location">
+									<p>11341 Philadelphia Road<br>
+									White Marsh, MD 21162</p>
+								</li>
+							</ul>
+						</div>
+						<div class="column column-1-3">
+							<ul class="features-list">
+								<li class="sl-small-mail">
+									<p>E-mail:<br>
+									<a href="mailto:ContactUs@PrecisionConcrete.com">ContactUs@PrecisionConcrete.com</a></p>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>

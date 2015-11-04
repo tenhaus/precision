@@ -2966,3 +2966,67 @@ body.lock-position
 	width: 100%;
 	height: 100%;
 }
+
+/* --- Login Box --- */
+.login-container{
+	background: url('../images/slider/concrete.png') center 0 no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: auto;
+}
+.login-box
+{
+	height: auto;
+	white-space: normal;
+	background: rgba(38, 38, 40, 0.7);
+	margin: 1em auto;
+	// padding-bottom: 47px;
+	display: block;
+}
+.login-box h2
+{
+	color: #FFF;
+	border-bottom: 1px solid #64BDEC;
+	padding: 21px 30px 20px;
+	background: rgba(38, 38, 40, 0.68);
+}
+.login-box p
+{
+	font-family: 'Raleway';
+	font-size: 16px;
+	color: #FFF;
+	line-height: 26px;
+	padding: 23px 30px 40px;
+}
+.login-box .more
+{
+	margin-left: 0;
+	padding: 17px 20px 16px;
+}
+.login-box form{
+	display: block;
+	padding: 21px 30px 40px;
+}
+
+.form-group{
+	margin: 1em 0;
+}
+
+/*--- Contents Box---*/
+.contents-box
+{
+	width: 800px;
+	max-height: auto;
+	white-space: normal;
+	background: rgba(38, 38, 40, 0.7);
+	margin: 1em auto;
+	padding-bottom: 47px;
+	display: none;
+}
+.contents-box h2
+{
+	color: #FFF;
+	border-bottom: 1px solid #64BDEC;
+	padding: 21px 30px 20px;
+	background: rgba(38, 38, 40, 0.68);
+}
