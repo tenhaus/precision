@@ -1,5 +1,8 @@
 @media screen and (max-width:1900px){
-	.login-box .contents-box{
+	.login-box{
+		max-width: 600px;
+	}
+	.contents-box{
 		width: 700px;
 	}
 	.form-group input{
@@ -171,6 +174,12 @@
 	}
 	.login-box{
 		width: 500px;
+	}
+	.contents-box{
+		width: 600px;
+	}
+	.pdf{
+		max-width: 80%;
 	}
 	.login-container{
 		padding: 2em 0;
@@ -848,6 +857,9 @@
 	}
 	.login-box{
 		width: 300px;
+	}
+	.pdf{
+		max-width: 100px;
 	}
 	.form-group input{
 		width: 200px;

@@ -2969,7 +2969,7 @@ body.lock-position
 
 /* --- Login Box --- */
 .login-container{
-	background: url('../images/slider/concrete.png') center 0 no-repeat;
+	background: url('../images/slider/concrete.png') center 50% no-repeat;
 	background-size: cover;
 	width: 100%;
 	height: auto;
@@ -2980,7 +2980,6 @@ body.lock-position
 	white-space: normal;
 	background: rgba(38, 38, 40, 0.7);
 	margin: 1em auto;
-	// padding-bottom: 47px;
 	display: block;
 }
 .login-box h2
@@ -3001,6 +3000,7 @@ body.lock-position
 .login-box .more
 {
 	margin-left: 0;
+	width: 100%;
 	padding: 17px 20px 16px;
 }
 .login-box form{
@@ -3008,15 +3008,21 @@ body.lock-position
 	padding: 21px 30px 40px;
 }
 
+span.form-error{
+	color: #fff;
+	padding: 1em;
+	margin: 2em 0;
+	font-weight: 700;
+	font-size: 1em;
+}
 .form-group{
-	margin: 1em 0;
+	margin: 1em 0 1.5em;
 }
 
 /*--- Contents Box---*/
 .contents-box
 {
-	width: 800px;
-	max-height: auto;
+	min-height: 500px;
 	white-space: normal;
 	background: rgba(38, 38, 40, 0.7);
 	margin: 1em auto;
@@ -3029,4 +3035,8 @@ body.lock-position
 	border-bottom: 1px solid #64BDEC;
 	padding: 21px 30px 20px;
 	background: rgba(38, 38, 40, 0.68);
+}
+
+.contents-box p{
+	color: #fff;
 }
