@@ -191,7 +191,7 @@ img.radius
 
 img.radius.about
 {
-  margin-top: 50px;  
+  margin-top: 50px;
 }
 
 .float
@@ -3039,4 +3039,13 @@ span.form-error{
 
 .contents-box p{
 	color: #fff;
+}
+
+.document-container {
+  display: flex;
+  justify-content: center;
+}
+
+.login-container {
+  min-height: 659px;
 }
