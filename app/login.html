@@ -133,15 +133,15 @@
 						<div class="login-container">
 							<div class="login-box">
 								<h2>Login</h2>
-								<form name="loginForm"  role="form"  method="post">
+								<form id="loginForm" name="loginForm"  role="form"  method="post">
 									<div class="form-group">
-										<input type="text" name ="user" data-validation="length letternumeric" data-validation-length="min6"placeholder="Username" required/>
+										<input type="text" name ="user" data-validation="length letternumeric" data-validation-length="min6" placeholder="Username" required="required"/>
 									</div>
 									<div class="form-group">
-										<input type="password"  name="password" data-validation="length letternumeric" data-validation-length="min6" placeholder="Password" required/>
+										<input type="password"  name="password" data-validation="length letternumeric" data-validation-length="min6" placeholder="Password" required="required" />
 									</div>
 									<div class="form-group">
-										<input type="submit" class="more simple" value="Login" />
+										<input id="Submit" type="submit" class="more simple" value="Login" />
 									</div>
 								</form>
 								
@@ -223,7 +223,8 @@
 		
 		
     	$.validate({
-    		modules: 'security, password',
+    		form: "#loginForm",
+    		modules: 'html5, password',
     		onError: function(){
     			alert('Sorry your username and password is incorrect, please try again.');
     			return false;
@@ -235,7 +236,24 @@
     			return false;
     		}
     	});
-   
+   		// $.validate();
+
+   		// $(document).ready(function(){
+   		// 	var user = user.val(),
+   		// 		password = password.val();
+
+   		// 		$('#Submit').click(function(){
+   		// 			if((user === 'Employee') && (password === 'Password')){
+   		// 				$('.login-box').slideUp('slow', function(){
+		   //  				$('.contents-box').show();
+		   //  			});
+		   //  			return false;
+   		// 			}else{
+   		// 				alert('Sorry your username and password is incorrect, please try again.');
+   		// 				return false;
+   		// 			}
+   		// 		});
+   		// });
     	
     	
     </script>
