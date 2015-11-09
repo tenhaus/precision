@@ -3044,6 +3044,7 @@ span.form-error{
 .document-container {
   display: flex;
   justify-content: center;
+  padding: 3rem;
 }
 
 .login-container {
