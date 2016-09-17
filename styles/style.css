@@ -901,9 +901,9 @@ body.overlay .background-overlay
 }
 .column
 {
-	position: relative;
-	float: left;
-	margin-left: 30px;
+	order: 1;
+	flex-grow: 1;
+	margin: 10px;
 }
 .column:first-child,
 .column.first
@@ -3044,6 +3044,7 @@ span.form-error{
 .document-container {
   display: flex;
   justify-content: center;
+  padding: 1em;
 }
 
 .login-container {
